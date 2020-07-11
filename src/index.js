@@ -65,4 +65,4 @@ const glitch = document.createElement("glitch-console");
 
 body.appendChild(glitch);
 
-console.log("test");
+export default glitch;

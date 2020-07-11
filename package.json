@@ -1,0 +1,24 @@
+{
+  "name": "glitch-console",
+  "version": "0.1.0",
+  "description": "A small tool for debugging your app in Glitch using iPad",
+  "main": "./src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/antonio-lazarenni/glitch-console.git"
+  },
+  "keywords": [
+    "glitch",
+    "console",
+    "ipad"
+  ],
+  "author": "Anton Lazarenko",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/antonio-lazarenni/glitch-console/issues"
+  },
+  "homepage": "https://github.com/antonio-lazarenni/glitch-console#readme"
+}
