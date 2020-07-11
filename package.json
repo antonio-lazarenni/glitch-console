@@ -1,0 +1,17 @@
+{
+  "name": "glitch-console",
+  "version": "0.1.0",
+  "description": "A small tool for people who use glich on iPad for development. Which allows you to debug your code with console.log directly to the page.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "npm run start"
+  },
+  "keywords": [
+    "glitch",
+    "console",
+    "ipad"
+  ],
+  "author": "Anton Lazarenko",
+  "license": "MIT"
+}
