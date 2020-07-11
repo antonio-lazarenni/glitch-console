@@ -1,10 +1,11 @@
 {
   "name": "glitch-console",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "A small tool for debugging your app in Glitch using iPad",
   "main": "./src/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "parcel build ./src/index.js --out-dir ./lib"
   },
   "repository": {
     "type": "git",
@@ -17,9 +18,14 @@
   ],
   "author": "Anton Lazarenko",
   "license": "MIT",
-  "publishConfig": { "registry": "https://npm.pkg.github.com/" },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
+  },
   "bugs": {
     "url": "https://github.com/antonio-lazarenni/glitch-console/issues"
   },
-  "homepage": "https://github.com/antonio-lazarenni/glitch-console#readme"
+  "homepage": "https://github.com/antonio-lazarenni/glitch-console#readme",
+  "devDependencies": {
+    "parcel-bundler": "^1.12.4"
+  }
 }
