@@ -5,7 +5,8 @@
   "main": "./lib/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "parcel build ./src/index.js --out-dir ./lib"
+    "build": "parcel build ./src/index.js --out-dir ./lib",
+    "demo": "parcel demo/index.html --out-dir ./demo/dist"
   },
   "repository": {
     "type": "git",

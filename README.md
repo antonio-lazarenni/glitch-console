@@ -10,7 +10,8 @@ Which allows you to debug your code with `console.log` directly to the page.
 npm install glitch-console --save
 ```
 
-```
+## Basic Usage
+```js
 import 'glitch-console'
 ```
 
