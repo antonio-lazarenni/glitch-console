@@ -22,7 +22,7 @@ class LogRow extends HTMLElement {
     }
 
     connectedCallback() {
-        const text = this.getAttribute('log-text') || 'lol'
+        const text = this.getAttribute('log-text')
         const t = document.createTextNode(text)
         this.appendChild(t)
     }
