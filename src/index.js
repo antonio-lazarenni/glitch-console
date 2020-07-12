@@ -1,3 +1,5 @@
+import LogRow from './components/LogRow/index.js'
+
 const body = document.querySelector("body");
 const template = document.createElement("template");
 
@@ -10,30 +12,30 @@ template.innerHTML = `
           bottom: 0;
           left: 0;
           width: 100%;
-          color: green;
+          height: 250px;
+          color: #ffffff;
+          background: #17032e;
         }
-        #logs {
-            height: 250px;
-            background: #000;
-          }
       </style>
-      <ul id="logs"></ul>
+      <ul id="logs">
+      </ul>
 `;
 
 class GlitchConsole extends HTMLElement {
   constructor() {
     super();
-    this.rock = 1;
     this.traceMethodCalls = this.traceMethodCalls.bind(this);
 
     console = this.traceMethodCalls(console);
-
+    
     this._shadowRoot = this.attachShadow({ mode: "open" });
     this._shadowRoot.appendChild(template.content.cloneNode(true));
+    
+    this.logs = this.shadowRoot.querySelector("ul");
   }
 
   connectedCallback() {
-    console.log("Custom square element added to page.");
+    // console.log("Custom square element added to page.");
   }
 
   traceMethodCalls(obj) {
@@ -42,11 +44,10 @@ class GlitchConsole extends HTMLElement {
         const targetValue = Reflect.get(target, propKey, receiver);
         if (typeof targetValue === "function") {
           return function(...args) {
-            const logs = glitchConsole.shadowRoot.querySelector("ul");
-            const li = document.createElement("li");
-            const t = document.createTextNode(args);
-            li.appendChild(t);
-            logs.appendChild(li);
+            const row = document.createElement("log-row")
+            row.setAttribute('log-text', args);
+            glitchConsole.logs.appendChild(row);
+
             return targetValue.apply(this, args);
           };
         } else {
@@ -59,10 +60,10 @@ class GlitchConsole extends HTMLElement {
   }
 }
 
+
+customElements.define("log-row", LogRow);
 customElements.define("glitch-console", GlitchConsole);
 
 const glitch = document.createElement("glitch-console");
 
 body.appendChild(glitch);
-
-export default glitch;
