@@ -1,7 +1,7 @@
 Welcome to Glitch Console
 =================
 
-A small tool for people who use glich on iPad for development.
+A small tool for people who use [Glitch](https://glitch.com) on iPad for development.
 Which allows you to debug your code with `console.log` directly to the page.
 
 ## Instalation
