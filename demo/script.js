@@ -1,3 +1,17 @@
 import '../src/index'
 
 console.log(11)
+console.log(0)
+console.log(321)
+console.log(18)
+console.log(42)
+console.log(42)
+console.log(42)
+console.log(42)
+console.log(42)
+console.log(42)
+console.log(42)
+console.log(42)
+console.log(42)
+console.log(42)
+console.log(14)

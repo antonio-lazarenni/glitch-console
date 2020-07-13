@@ -5,7 +5,9 @@ template.innerHTML = `
         :host {
           display: block;
           border: 1px solid #fff;
-          color: green;
+          color: #fff;
+          font-family: Lucida Console, Monaco, monospace;
+          list-style: none;
         }
     </style>
     <li>

@@ -12,8 +12,15 @@ template.innerHTML = `
           left: 0;
           width: 100%;
           height: 250px;
+          overflow: auto;
           color: #ffffff;
           background: #17032e;
+        }
+        ul {
+          list-style-type: none;
+          margin: 0;
+          padding: 0;
+
         }
       </style>
       <ul id="logs">
