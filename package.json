@@ -4,7 +4,7 @@
   "description": "A small tool for debugging your app in Glitch using iPad",
   "main": "./lib/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "jest", 
     "build": "parcel build ./src/index.js --out-dir ./lib",
     "demo": "parcel demo/index.html --out-dir ./demo/dist"
   },
@@ -24,6 +24,12 @@
   },
   "homepage": "https://github.com/antonio-lazarenni/glitch-console#readme",
   "devDependencies": {
+    "@babel/core": "^7.10.4",
+    "@babel/plugin-transform-runtime": "^7.10.4",
+    "@babel/preset-env": "^7.10.4",
+    "@testing-library/dom": "^7.20.0",
+    "babel-jest": "^26.1.0",
+    "jest": "^26.1.0",
     "parcel-bundler": "^1.12.4"
   }
 }
