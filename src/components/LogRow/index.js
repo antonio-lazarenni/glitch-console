@@ -28,4 +28,6 @@ class LogRow extends HTMLElement {
     }
 }
 
+customElements.define("log-row", LogRow);
+
 export default LogRow
